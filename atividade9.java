@@ -16,13 +16,11 @@
 import java.util.Scanner;
 public class atividade9 {
     public static void main(String[] args) throws Exception {
-        double valor,vendafinal,vendafinal2,vendafinal4,vendafinal5,vendafinal6;
-        int opcao;
-
+  
         Scanner teclado = new Scanner(System.in);
 
         System.out.print("Coloque o valor do produto: ");
-        valor = teclado.nextDouble();
+        double valor = teclado.nextDouble();
 
         System.out.println("-------- FORMAS DE PAGAMENTOS ------------------ ");
         System.out.println("1 - Venda a Vista - desconto de 10% ");
@@ -33,14 +31,14 @@ public class atividade9 {
         System.out.println("6 - Venda com cartão de crédito - desconto de 7 % ");
         System.out.println("---------------------------------------------------");
         System.out.print("Digite a opcao: ");
-        opcao = teclado.nextInt();
+        int opcao = teclado.nextInt();
         teclado.close();
 
-        vendafinal =  (valor / 100) *10;
-        vendafinal2 = (valor / 100) *5;
-        vendafinal4 = (valor / 100) *5;
-        vendafinal5 = (valor / 100) *8;
-        vendafinal6 = (valor / 100) *7;
+        double vendafinal =  (valor / 100) *10;
+        double vendafinal2 = (valor / 100) *5;
+        double vendafinal4 = (valor / 100) *5;
+        double vendafinal5 = (valor / 100) *8;
+        double vendafinal6 = (valor / 100) *7;
 
         double desconto = valor - vendafinal;
         double desconto2 = valor - vendafinal2;
